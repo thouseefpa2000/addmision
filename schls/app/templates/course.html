@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+    {% block  content %}
+<div class="table">
+    <div class="heading">
+        <h1>Courses</h1>
+    </div>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Duration</th>
+                <th>Fees</th>
+                <th></th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Web Development</td>
+                <td>3 months</td>
+                <td>$300</td>
+                <td><a href="">views</a></td>
+                
+            </tr>
+            <tr>
+                <td>Data Science</td>
+                <td>6 months</td>
+                <td>$600</td>
+                <td><a href="">views</a></td>
+                
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</div>
+
+    
+{% endblock %}

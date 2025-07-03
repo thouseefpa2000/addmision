@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    background: gray;
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.profile {
+    text-transform: capitalize;
+}
+
+.btn {
+    display: flex;
+    gap: 10px;
+}
+
+.btn button {
+    width: 100px;
+    background: yellow;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.table {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.heading h1 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-transform: capitalize;
+}
+tr a{
+    text-decoration: none;
+    color: white;
+    background: red;
+    transition: .3s;
+}
+tr a:hover{
+    background: rgb(226, 88, 88);
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.title h1 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.description p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.btn {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.btn button {
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: #2980b9;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.title h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn button:hover {
+    background-color: #2980b9;
+}
+/* Success message container */
+.success-message {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #f0fff4;
+    border: 1px solid #c6f6d5;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.success-message h2 {
+    color: #2f855a;
+    margin-bottom: 10px;
+}
+
+/* Paragraph */
+.success-message p {
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+/* Button styled link */
+.button {
+    display: inline-block;
+    background-color: #48bb78;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #38a169;
+}

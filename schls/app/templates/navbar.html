@@ -1,0 +1,34 @@
+<nav>
+    <div class="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            {% if user.is_superuser %}
+            <li><a href="{% url 'createcourse' %}">Add Course</a></li>
+            <li><a href="{% url 'table' %}">Courses </a></li>
+            {% endif %}
+            <li><a href="">About</a></li>
+        </ul>
+    </div>
+    <div class="profile">
+
+        <h3>Hello, 
+            {% if user.is_superuser %}
+            <p> Admin {{ user.username }}!</p>
+            {% endif %}
+            
+            {% if user.is_authenticated %}
+            {{user.username}}</h3>
+            {% endif %}
+    </div>
+    <div class="btn">
+        {% if user.is_superuser %}
+        <a href="{% url 'logout' %}"><button>Logout</button></a>
+        
+        {% else %}
+        
+        <a href="{% url 'login' %}"><button>Login</button></a>
+        <a href="{% url 'register_views' %}"><button>Register</button></a>
+        
+        {% endif %}
+    </div>
+</nav>

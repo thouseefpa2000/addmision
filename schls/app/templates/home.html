@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard">
+    <h2>Welcome to the Schools Management System</h2>
+
+   <div class="card-container">
+    {% for x in x %}
+    <div class="card">
+        <div class="title">
+            <h1>{{ x.name }}</h1>
+        </div>
+        <div class="description">
+            <p>Duration: {{ x.durations }} (year/month)</p>
+            <p>Fees: {{ x.fees }}</p>
+            <p>{{ x.description }}</p>
+        </div>
+        <div class="btn">
+            <a href="{% url 'stdapply' %}"><button>Apply </button></a>
+            {% if user.is_superuser %}
+
+               <a href="{% url 'delete_course' x.id %}" ><button>DELETE</button></a>
+               <a href="{% url 'update_course' x.id %}"><button>Update</button></a>
+
+            
+            {% endif %}
+            
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+    
+    
+</div>
+{% endblock %}
+
